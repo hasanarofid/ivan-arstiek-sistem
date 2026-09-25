@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
 
         // 2. Seed Default Users and Assign Roles
         $admin = User::updateOrCreate(
-            ['email' => 'admin@cms.com'],
+            ['email' => 'admin@cahayaornamen.com'],
             [
                 'name' => 'Admin CMS',
                 'password' => bcrypt('password'),
@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
         $admin->assignRole('admin');
 
         $editor = User::updateOrCreate(
-            ['email' => 'editor@cms.com'],
+            ['email' => 'editor@cahayaornamen.com'],
             [
                 'name' => 'Editor CMS',
                 'password' => bcrypt('password'),
@@ -38,7 +38,7 @@ class DatabaseSeeder extends Seeder
         $editor->assignRole('editor');
 
         $client = User::updateOrCreate(
-            ['email' => 'client@cms.com'],
+            ['email' => 'client@cahayaornamen.com'],
             [
                 'name' => 'Client CMS',
                 'password' => bcrypt('password'),
